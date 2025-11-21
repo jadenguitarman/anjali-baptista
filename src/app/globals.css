@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased; 
+}
+
+a {
+  @apply text-brand-primary hover:text-brand-dark transition-colors;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-white font-semibold shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark;
+}
+
+.section {
+  @apply py-12 md:py-16;
+}
+
+.container-box {
+  @apply max-w-6xl mx-auto px-4 md:px-6;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-soft p-6 border border-gray-100;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-brand-secondary px-3 py-1 text-sm font-medium text-brand-dark;
+}
